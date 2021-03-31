@@ -58,12 +58,12 @@ function sayHi() {
 sayHi();
 ```
 
-- A: `Lydia` and `undefined`
-- B: `Lydia` and `ReferenceError`
-- C: `ReferenceError` and `21`
-- D: `undefined` and `ReferenceError`
+- A: `Lydia` и `undefined`
+- B: `Lydia` и `ReferenceError`
+- C: `ReferenceError` и `21`
+- D: `undefined` и `ReferenceError`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>Отговор</b></summary>
 <p>
 
 #### Answer: D
