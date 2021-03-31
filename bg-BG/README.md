@@ -77,7 +77,7 @@ sayHi();
 
 ---
 
-###### 2. What's the output?
+###### 2. Какъв ще е резултата?
 
 ```javascript
 for (var i = 0; i < 3; i++) {
@@ -107,7 +107,7 @@ In the second loop, the variable `i` was declared using the `let` keyword: varia
 
 ---
 
-###### 3. What's the output?
+###### 3. Какъв ще е резултата?
 
 ```javascript
 const shape = {
@@ -143,7 +143,7 @@ There is no value `radius` on that object, which returns `NaN`.
 
 ---
 
-###### 4. What's the output?
+###### 4. Какъв ще е резултата?
 
 ```javascript
 +true;
@@ -168,7 +168,7 @@ The string `'Lydia'` is a truthy value. What we're actually asking, is "is this 
 
 ---
 
-###### 5. Which one is true?
+###### 5. Кое е вярно?
 
 ```javascript
 const bird = {
@@ -204,7 +204,7 @@ However, with dot notation, this doesn't happen. `mouse` does not have a key cal
 
 ---
 
-###### 6. What's the output?
+###### 6. Какъв ще е резултата?
 
 ```javascript
 let c = { greeting: 'Hey!' };
@@ -239,7 +239,7 @@ When you change one object, you change all of them.
 
 ---
 
-###### 7. What's the output?
+###### 7. Какъв ще е резултата?
 
 ```javascript
 let a = 3;
@@ -272,7 +272,7 @@ However, when we use the `===` operator, both value _and_ type should be the sam
 
 ---
 
-###### 8. What's the output?
+###### 8. Какъв ще е резултата?
 
 ```javascript
 class Chameleon {
@@ -307,7 +307,7 @@ The `colorChange` function is static. Static methods are designed to live only o
 
 ---
 
-###### 9. What's the output?
+###### 9. Какъв ще е резултата?
 
 ```javascript
 let greeting;
@@ -362,7 +362,7 @@ A function is a special type of object. The code you write yourself isn't the ac
 
 ---
 
-###### 11. What's the output?
+###### 11. Какъв ще е резултата?
 
 ```javascript
 function Person(firstName, lastName) {
@@ -403,7 +403,7 @@ Person.prototype.getFullName = function() {
 
 ---
 
-###### 12. What's the output?
+###### 12. Какъв ще е резултата?
 
 ```javascript
 function Person(firstName, lastName) {
@@ -475,7 +475,7 @@ All objects have prototypes, except for the **base object**. The base object is 
 
 ---
 
-###### 15. What's the output?
+###### 15. Какъв ще е резултата?
 
 ```javascript
 function sum(a, b) {
@@ -504,7 +504,7 @@ In this example, JavaScript converts the number `1` into a string, in order for 
 
 ---
 
-###### 16. What's the output?
+###### 16. Какъв ще е резултата?
 
 ```javascript
 let number = 0;
@@ -540,7 +540,7 @@ This returns `0 2 2`.
 
 ---
 
-###### 17. What's the output?
+###### 17. Какъв ще е резултата?
 
 ```javascript
 function getPersonInfo(one, two, three) {
@@ -571,7 +571,7 @@ If you use tagged template literals, the value of the first argument is always a
 
 ---
 
-###### 18. What's the output?
+###### 18. Какъв ще е резултата?
 
 ```javascript
 function checkAge(data) {
@@ -607,7 +607,7 @@ This is why both `{ age: 18 } === { age: 18 }` and `{ age: 18 } == { age: 18 }` 
 
 ---
 
-###### 19. What's the output?
+###### 19. Какъв ще е резултата?
 
 ```javascript
 function getAge(...args) {
@@ -634,7 +634,7 @@ The rest parameter (`...args`) lets us "collect" all remaining arguments into an
 
 ---
 
-###### 20. What's the output?
+###### 20. Какъв ще е резултата?
 
 ```javascript
 function getAge() {
@@ -711,7 +711,7 @@ If you used `localStorage`, the data would've been there forever, unless for exa
 
 ---
 
-###### 23. What's the output?
+###### 23. Какъв ще е резултата?
 
 ```javascript
 var num = 8;
@@ -739,7 +739,7 @@ You cannot do this with `let` or `const` since they're block-scoped.
 
 ---
 
-###### 24. What's the output?
+###### 24. Какъв ще е резултата?
 
 ```javascript
 const obj = { 1: 'a', 2: 'b', 3: 'c' };
@@ -770,7 +770,7 @@ It doesn't work that way for a set. There is no `'1'` in our set: `set.has('1')`
 
 ---
 
-###### 25. What's the output?
+###### 25. Какъв ще е резултата?
 
 ```javascript
 const obj = { a: 'one', b: 'two', a: 'three' };
@@ -812,7 +812,7 @@ The base execution context is the global execution context: it's what's accessib
 
 ---
 
-###### 27. What's the output?
+###### 27. Какъв ще е резултата?
 
 ```javascript
 for (let i = 1; i < 5; i++) {
@@ -838,7 +838,7 @@ The `continue` statement skips an iteration if a certain condition returns `true
 
 ---
 
-###### 28. What's the output?
+###### 28. Какъв ще е резултата?
 
 ```javascript
 String.prototype.giveLydiaPizza = () => {
@@ -867,7 +867,7 @@ name.giveLydiaPizza();
 
 ---
 
-###### 29. What's the output?
+###### 29. Какъв ще е резултата?
 
 ```javascript
 const a = {};
@@ -901,7 +901,7 @@ Then, we log `a[b]`, which is actually `a["[object Object]"]`. We just set that 
 
 ---
 
-###### 30. What's the output?
+###### 30. Какъв ще е резултата?
 
 ```javascript
 const foo = () => console.log('First');
@@ -1010,7 +1010,7 @@ If we click `p`, we see two logs: `p` and `div`. During event propagation, there
 
 ---
 
-###### 33. What's the output?
+###### 33. Какъв ще е резултата?
 
 ```javascript
 const person = { name: 'Lydia' };
