@@ -17,7 +17,7 @@ Feel free to reach out to me! 😊 <br />
 
 ---
 
-<details><summary><b> See 18 Available Translations 🇸🇦🇪🇬🇧🇦🇩🇪🇪🇸🇫🇷🇮🇩🇯🇵🇰🇷🇳🇱🇧🇷🇷🇺🇹🇭🇹🇷🇺🇦🇻🇳🇨🇳🇹🇼🇧🇬</b></summary>
+<details><summary><b> See 19 Available Translations 🇸🇦🇪🇬🇧🇦🇩🇪🇪🇸🇫🇷🇮🇩🇯🇵🇰🇷🇳🇱🇧🇷🇷🇺🇹🇭🇹🇷🇺🇦🇻🇳🇨🇳🇹🇼🇧🇬</b></summary>
 <p>
 
 - [🇸🇦 العربية](./ar-AR/README_AR.md)
@@ -68,9 +68,9 @@ sayHi();
 
 #### Answer: D
 
-Within the function, we first declare the `name` variable with the `var` keyword. This means that the variable gets hoisted (memory space is set up during the creation phase) with the default value of `undefined`, until we actually get to the line where we define the variable. We haven't defined the variable yet on the line where we try to log the `name` variable, so it still holds the value of `undefined`.
+В рамките на функцията първо декларираме променливата `name` с ключовата дума` var`. Това означава, че променливата се повдига (пространството в паметта се настройва по време на фазата на създаване) със стойността по подразбиране на „undefined“, докато всъщност стигнем до реда, където дефинираме променливата. Все още не сме дефинирали променливата на реда, където се опитваме да регистрираме променливата `name`, така че тя все още съдържа стойността на` undefined`.
 
-Variables with the `let` keyword (and `const`) are hoisted, but unlike `var`, don't get <i>initialized</i>. They are not accessible before the line we declare (initialize) them. This is called the "temporal dead zone". When we try to access the variables before they are declared, JavaScript throws a `ReferenceError`.
+Променливите с ключовата дума `let` (и` const`) са издигнати, но за разлика от `var`, не се <i> инициализират </i>. Те не са достъпни преди реда, който ги декларираме (инициализираме). Това се нарича "временна мъртва зона". Когато се опитваме да осъществим достъп до променливите, преди те да бъдат декларирани, JavaScript извежда `ReferenceError`.
 
 </p>
 </details>
