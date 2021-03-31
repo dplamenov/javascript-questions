@@ -17,7 +17,7 @@ Feel free to reach out to me! 😊 <br />
 
 ---
 
-<details><summary><b> See 18 Available Translations 🇸🇦🇪🇬🇧🇦🇩🇪🇪🇸🇫🇷🇮🇩🇯🇵🇰🇷🇳🇱🇧🇷🇷🇺🇹🇭🇹🇷🇺🇦🇻🇳🇨🇳🇹🇼</b></summary>
+<details><summary><b> See 18 Available Translations 🇸🇦🇪🇬🇧🇦🇩🇪🇪🇸🇫🇷🇮🇩🇯🇵🇰🇷🇳🇱🇧🇷🇷🇺🇹🇭🇹🇷🇺🇦🇻🇳🇨🇳🇹🇼🇧🇬</b></summary>
 <p>
 
 - [🇸🇦 العربية](./ar-AR/README_AR.md)
@@ -38,13 +38,14 @@ Feel free to reach out to me! 😊 <br />
 - [🇻🇳 Tiếng Việt](./vi-VI/README-vi.md)
 - [🇨🇳 简体中文](./zh-CN/README-zh_CN.md)
 - [🇹🇼 繁體中文](./zh-TW/README_zh-TW.md)
+- [🇧🇬 Български](./bg-BG/README.md)
 
 </p>
 </details>
 
 ---
 
-###### 1. What's the output?
+###### 1. Какъв ще е резултата?
 
 ```javascript
 function sayHi() {
