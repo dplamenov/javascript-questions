@@ -458,7 +458,7 @@ console.log(sarah);
 
 ---
 
-###### 14. All object have prototypes.
+###### 14. Всички обекти имат прототипи.
 
 - A: true
 - B: false
@@ -468,7 +468,7 @@ console.log(sarah);
 
 #### Отговор: B
 
-All objects have prototypes, except for the **base object**. The base object is the object created by the user, or an object that is created using the `new` keyword. The base object has access to some methods and properties, such as `.toString`. This is the reason why you can use built-in JavaScript methods! All of such methods are available on the prototype. Although JavaScript can't find it directly on your object, it goes down the prototype chain and finds it there, which makes it accessible for you.
+Всички обекти имат прототипи, с изключение на ** основния обект **. Основният обект е обектът, създаден от потребителя, или обект, който е създаден с помощта на ключовата дума `new`. Основният обект има достъп до някои методи и свойства, като `.toString`. Това е причината, поради която можете да използвате вградени JavaScript методи! Всички такива методи са налични в прототипа. Въпреки че JavaScript не може да го намери директно във вашия обект, той слиза по веригата на прототипа и го намира там, което го прави достъпен за вас.
 
 </p>
 </details>
@@ -495,9 +495,9 @@ sum(1, '2');
 
 #### Отговор: C
 
-JavaScript is a **dynamically typed language**: we don't specify what types certain variables are. Values can automatically be converted into another type without you knowing, which is called _implicit type coercion_. **Coercion** is converting from one type into another.
+JavaScript е **динамично въведен език**: ние не посочваме какви типове са определени променливи. Стойностите могат автоматично да се преобразуват в друг тип, без да знаете, което се нарича _implicit type coercion_. Принудата се превръща от един тип в друг.
 
-In this example, JavaScript converts the number `1` into a string, in order for the function to make sense and return a value. During the addition of a numeric type (`1`) and a string type (`'2'`), the number is treated as a string. We can concatenate strings like `"Hello" + "World"`, so what's happening here is `"1" + "2"` which returns `"12"`.
+В този пример JavaScript преобразува числото `1` в низ, за да може функцията да има смисъл и да върне стойност. По време на добавянето на числов тип („1“) и тип низ („2“) числото се третира като низ. Можем да обединим низове като "Hello" + "World", така че това, което се случва тук, е "" 1 "+" 2 ", което връща" "12".
 
 </p>
 </details>
