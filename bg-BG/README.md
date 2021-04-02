@@ -418,26 +418,26 @@ console.log(lydia);
 console.log(sarah);
 ```
 
-- A: `Person {firstName: "Lydia", lastName: "Hallie"}` and `undefined`
-- B: `Person {firstName: "Lydia", lastName: "Hallie"}` and `Person {firstName: "Sarah", lastName: "Smith"}`
-- C: `Person {firstName: "Lydia", lastName: "Hallie"}` and `{}`
-- D: `Person {firstName: "Lydia", lastName: "Hallie"}` and `ReferenceError`
+- A: `Person {firstName: "Lydia", lastName: "Hallie"}` и `undefined`
+- B: `Person {firstName: "Lydia", lastName: "Hallie"}` и `Person {firstName: "Sarah", lastName: "Smith"}`
+- C: `Person {firstName: "Lydia", lastName: "Hallie"}` и `{}`
+- D: `Person {firstName: "Lydia", lastName: "Hallie"}` и `ReferenceError`
 
 <details><summary><b>Отговор</b></summary>
 <p>
 
 #### Отговор: A
 
-For `sarah`, we didn't use the `new` keyword. When using `new`, `this` refers to the new empty object we create. However, if you don't add `new`, `this` refers to the **global object**!
+За `sarah` не използвахме ключовата дума` new`. Когато се използва „ново“, „това“ се отнася до новия празен обект, който създаваме. Ако обаче не добавите „ново“, „това“ се отнася до ** глобалния обект **!
 
-We said that `this.firstName` equals `"Sarah"` and `this.lastName` equals `"Smith"`. What we actually did, is defining `global.firstName = 'Sarah'` and `global.lastName = 'Smith'`. `sarah` itself is left `undefined`, since we don't return a value from the `Person` function.
+Казахме, че `this.firstName` е равно на" Sarah "и` this.lastName` е равно на "Smith". Това, което всъщност направихме, е да дефинираме „global.firstName =„ Sarah “и„ global.lastName = „Smith“. Самият „sarah“ остава „недефиниран“, тъй като не връщаме стойност от функцията „Person“.
 
 </p>
 </details>
 
 ---
 
-###### 13. What are the three phases of event propagation?
+###### 13. Кои са трите фази на „event propagation“?
 
 - A: Target > Capturing > Bubbling
 - B: Bubbling > Target > Capturing
@@ -449,7 +449,7 @@ We said that `this.firstName` equals `"Sarah"` and `this.lastName` equals `"Smit
 
 #### Отговор: D
 
-During the **capturing** phase, the event goes through the ancestor elements down to the target element. It then reaches the **target** element, and **bubbling** begins.
+По време на фазата **улавяне**, събитието преминава през предшествениците до целевия елемент. След това достига до **целевия** елемент и балончето започва.
 
 <img src="https://i.imgur.com/N18oRgd.png" width="200">
 
