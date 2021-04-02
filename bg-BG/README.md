@@ -89,18 +89,18 @@ for (let i = 0; i < 3; i++) {
 }
 ```
 
-- A: `0 1 2` and `0 1 2`
-- B: `0 1 2` and `3 3 3`
-- C: `3 3 3` and `0 1 2`
+- A: `0 1 2` и `0 1 2`
+- B: `0 1 2` и `3 3 3`
+- C: `3 3 3` и `0 1 2`
 
 <details><summary><b>Отговор</b></summary>
 <p>
 
 #### Отговор: C
 
-Because of the event queue in JavaScript, the `setTimeout` callback function is called _after_ the loop has been executed. Since the variable `i` in the first loop was declared using the `var` keyword, this value was global. During the loop, we incremented the value of `i` by `1` each time, using the unary operator `++`. By the time the `setTimeout` callback function was invoked, `i` was equal to `3` in the first example.
+Поради опашката от събития в JavaScript, функцията за обратно извикване `setTimeout` се извиква _ след_ цикъла е изпълнен. Тъй като променливата `i` в първия цикъл беше декларирана с ключовата дума` var`, тази стойност беше глобална. По време на цикъла увеличавахме стойността на „i“ с „1“ всеки път, използвайки унарния оператор „++“. По времето, когато беше извикана функцията за обратно извикване на „setTimeout“, „i“ беше равна на „3“ в първия пример.
 
-In the second loop, the variable `i` was declared using the `let` keyword: variables declared with the `let` (and `const`) keyword are block-scoped (a block is anything between `{ }`). During each iteration, `i` will have a new value, and each value is scoped inside the loop.
+Във втория цикъл променливата `i` беше декларирана с помощта на ключовата дума` let`: променливите, декларирани с ключовата дума `let` (и` const`), са обхванати от блок (блокът е нещо между "{}"). По време на всяка итерация, „i“ ще има нова стойност и всяка стойност се обхваща в цикъла.
 
 </p>
 </details>
@@ -122,21 +122,21 @@ console.log(shape.diameter());
 console.log(shape.perimeter());
 ```
 
-- A: `20` and `62.83185307179586`
-- B: `20` and `NaN`
-- C: `20` and `63`
-- D: `NaN` and `63`
+- A: `20` и `62.83185307179586`
+- B: `20` и `NaN`
+- C: `20` и `63`
+- D: `NaN` и `63`
 
 <details><summary><b>Отговор</b></summary>
 <p>
 
 #### Отговор: B
 
-Note that the value of `diameter` is a regular function, whereas the value of `perimeter` is an arrow function.
+Обърнете внимание, че стойността на "диаметър" е нормална функция, докато стойността на "периметър" е функция стрелка.
 
-With arrow functions, the `this` keyword refers to its current surrounding scope, unlike regular functions! This means that when we call `perimeter`, it doesn't refer to the shape object, but to its surrounding scope (window for example).
+При функциите със стрелки ключовата дума `this` се отнася до настоящия обхват, за разлика от обикновените функции! Това означава, че когато извикаме „периметър“, той не се отнася до обекта на фигурата, а до обхвата му (прозорец например).
 
-There is no value `radius` on that object, which returns `NaN`.
+Няма стойност „радиус“ на този обект, който връща „NaN“.
 
 </p>
 </details>
@@ -159,9 +159,9 @@ There is no value `radius` on that object, which returns `NaN`.
 
 #### Отговор: A
 
-The unary plus tries to convert an operand to a number. `true` is `1`, and `false` is `0`.
+Унарният плюс се опитва да преобразува операнд в число. „true“ е „1“, а „false“ е „0“.
 
-The string `'Lydia'` is a truthy value. What we're actually asking, is "is this truthy value falsy?". This returns `false`.
+Низът „Лидия“ е вярна стойност. Това, което всъщност питаме, е „това лъжливо значение ли е?“. Това връща „false“.
 
 </p>
 </details>
@@ -191,13 +191,13 @@ const mouse = {
 
 #### Отговор: A
 
-In JavaScript, all object keys are strings (unless it's a Symbol). Even though we might not _type_ them as strings, they are always converted into strings under the hood.
+В JavaScript всички обектни ключове са низове (освен ако не е символ). Въпреки че може да не ги _типираме като низове, те винаги се преобразуват в низове под капака.
 
-JavaScript interprets (or unboxes) statements. When we use bracket notation, it sees the first opening bracket `[` and keeps going until it finds the closing bracket `]`. Only then, it will evaluate the statement.
+JavaScript интерпретира (или деактивира) изрази. Когато използваме нотация на скоби, тя вижда първата отваряща скоба „[и продължава, докато намери затварящата скоба„] “. Само тогава той ще оцени изявлението.
 
-`mouse[bird.size]`: First it evaluates `bird.size`, which is `"small"`. `mouse["small"]` returns `true`
+`mouse [bird.size]`: Първо оценява `bird.size`, което е" малко ". `mouse [" small "]` връща `true`
 
-However, with dot notation, this doesn't happen. `mouse` does not have a key called `bird`, which means that `mouse.bird` is `undefined`. Then, we ask for the `size` using dot notation: `mouse.bird.size`. Since `mouse.bird` is `undefined`, we're actually asking `undefined.size`. This isn't valid, and will throw an error similar to `Cannot read property "size" of undefined`.
+Въпреки това, с точкова нотация, това не се случва. „mouse“ няма ключ, наречен „bird“, което означава, че „mouse.bird“ е „undefined“. След това искаме „размер“, като използваме точкова нотация: „mouse.bird.size“. Тъй като „mouse.bird“ е „undefined“, ние всъщност питаме „undefined.size“. Това не е валидно и ще доведе до грешка, подобна на `Не може да се прочете свойството" размер "на undefined`.
 
 </p>
 </details>
