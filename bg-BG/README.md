@@ -525,15 +525,15 @@ console.log(number);
 
 The **postfix** unary operator `++`:
 
-1. Returns the value (this returns `0`)
-2. Increments the value (number is now `1`)
+1. Връща стойността (това връща „0“)
+2. Увеличава стойността (числото вече е „1“)
 
 The **prefix** unary operator `++`:
 
-1. Increments the value (number is now `2`)
-2. Returns the value (this returns `2`)
+1. Увеличава стойността (числото вече е `2`)
+2. Връща стойността (това връща „2“)
 
-This returns `0 2 2`.
+Това връща „0 2 2“.
 
 </p>
 </details>
@@ -564,8 +564,7 @@ getPersonInfo`${person} is ${age} years old`;
 
 #### Отговор: B
 
-If you use tagged template literals, the value of the first argument is always an array of the string values. The remaining arguments get the values of the passed expressions!
-
+Ако използвате маркирани шаблонни литерали, стойността на първия аргумент винаги е масив от низовите стойности. Останалите аргументи получават стойностите на предадените изрази!
 </p>
 </details>
 
