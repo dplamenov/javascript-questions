@@ -226,13 +226,13 @@ console.log(d.greeting);
 
 #### Отговор: A
 
-In JavaScript, all objects interact by _reference_ when setting them equal to each other.
+В JavaScript всички обекти си взаимодействат чрез _reference_, когато ги задавате равни помежду си.
 
-First, variable `c` holds a value to an object. Later, we assign `d` with the same reference that `c` has to the object.
+Първо, променливата `c` съдържа стойност за обект. По-късно присвояваме „d“ със същата препратка, която „c“ има към обекта.
 
 <img src="https://i.imgur.com/ko5k0fs.png" width="200">
 
-When you change one object, you change all of them.
+Когато смените един обект, вие променяте всички тях.
 
 </p>
 </details>
@@ -261,11 +261,11 @@ console.log(b === c);
 
 #### Отговор: C
 
-`new Number()` is a built-in function constructor. Although it looks like a number, it's not really a number: it has a bunch of extra features and is an object.
+`new Number ()` е вграден конструктор на функции. Въпреки че изглежда като число, всъщност не е число: има куп допълнителни функции и е обект.
 
-When we use the `==` operator, it only checks whether it has the same _value_. They both have the value of `3`, so it returns `true`.
+Когато използваме оператора `==`, той само проверява дали има същата _value_. И двамата имат стойността на "3", така че връща "true".
 
-However, when we use the `===` operator, both value _and_ type should be the same. It's not: `new Number()` is not a number, it's an **object**. Both return `false.`
+Когато обаче използваме оператора `===`, и двете стойности _and_ тип трябва да са еднакви. Не е: `new Number ()` не е число, а ** обект **. И двете връщат „false“
 
 </p>
 </details>
@@ -300,7 +300,7 @@ console.log(freddie.colorChange('orange'));
 
 #### Отговор: D
 
-The `colorChange` function is static. Static methods are designed to live only on the constructor in which they are created, and cannot be passed down to any children. Since `freddie` is a child, the function is not passed down, and not available on the `freddie` instance: a `TypeError` is thrown.
+Функцията `colorChange` е статична. Статичните методи са предназначени да живеят само върху конструктора, в който са създадени, и не могат да бъдат предадени на нито едно дете. Тъй като `freddie` е дете, функцията не се предава и не е налична в екземпляра` freddie`: хвърля се "TypeError".
 
 </p>
 </details>
@@ -324,9 +324,9 @@ console.log(greetign);
 
 #### Отговор: A
 
-It logs the object, because we just created an empty object on the global object! When we mistyped `greeting` as `greetign`, the JS interpreter actually saw this as `global.greetign = {}` (or `window.greetign = {}` in a browser).
+Той регистрира обекта, защото току-що създадохме празен обект на глобалния обект! Когато погрешно въведохме „поздрав“ като „greetign“, интерпретаторът на JS всъщност видя това като „global.greetign = {}“ (или „window.greetign = {}“ в браузър).
 
-In order to avoid this, we can use `"use strict"`. This makes sure that you have declared a variable before setting it equal to anything.
+За да избегнем това, можем да използваме „използвайте стриктно“. Това гарантира, че сте декларирали променлива, преди да я зададете равна на нещо.
 
 </p>
 </details>
@@ -343,9 +343,9 @@ function bark() {
 bark.animal = 'dog';
 ```
 
-- A: Nothing, this is totally fine!
-- B: `SyntaxError`. You cannot add properties to a function this way.
-- C: `"Woof"` gets logged.
+- A: Нищо, това е напълно добре!
+- B: `SyntaxError`. Не можете да добавяте свойства към функция по този начин.
+- C: `"Woof"` се регистрира.
 - D: `ReferenceError`
 
 <details><summary><b>Отговор</b></summary>
@@ -353,9 +353,9 @@ bark.animal = 'dog';
 
 #### Отговор: A
 
-This is possible in JavaScript, because functions are objects! (Everything besides primitive types are objects)
+Това е възможно в JavaScript, защото функциите са обекти! (Всичко освен примитивните типове са обекти)
 
-A function is a special type of object. The code you write yourself isn't the actual function. The function is an object with properties. This property is invocable.
+Функцията е специален тип обект. Кодът, който пишете сами, не е действителната функция. Функцията е обект със свойства. Това свойство е извикващо.
 
 </p>
 </details>
@@ -388,9 +388,9 @@ console.log(member.getFullName());
 
 #### Отговор: A
 
-In JavaScript, functions are objects, and therefore, the method `getFullName` gets added to the constructor function object itself. For that reason, we can call `Person.getFullName()`, but `member.getFullName` throws a `TypeError`. 
+В JavaScript функциите са обекти и следователно методът "getFullName" се добавя към самия обект на конструктор на функция. Поради тази причина можем да извикаме `Person.getFullName ()`, но `member.getFullName` изхвърля` TypeError`.
 
-If you want a method to be available to all object instances, you have to add it to the prototype property:
+Ако искате методът да е достъпен за всички екземпляри на обекти, трябва да го добавите към свойството прототип:
 
 ```js
 Person.prototype.getFullName = function() {
